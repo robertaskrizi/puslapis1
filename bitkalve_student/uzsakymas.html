@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="lt">
+ <!-- Schema: html > head ir body; body > header, nav, div.puslapis (main ir aside), footer. -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Anketa | BitKalvė
+  </title>
+  <link href="css/stilius.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header id="virsus">
+   <img alt="BitKalvė logotipas" id="logotipas" src="img/logotipas.svg"/>
+   <div>
+    <h1>
+     BitKalvė
+    </h1>
+    <p>
+     Kompiuterių surinkimas ir atnaujinimas
+    </p>
+   </div>
+  </header>
+  <nav id="meniu">
+   <ul>
+    <li>
+     <a href="index.html">
+      Pagrindinis
+     </a>
+    </li>
+    <li>
+     <a href="apie.html">
+      Apie
+     </a>
+    </li>
+    <li>
+     <a href="galerija.html">
+      Galerija
+     </a>
+    </li>
+    <li>
+     <a class="aktyvus" href="uzsakymas.html">
+      Anketa
+     </a>
+    </li>
+    <li>
+     <a href="kontaktai.html">
+      Kontaktai
+     </a>
+    </li>
+   </ul>
+  </nav>
+  <div class="puslapis">
+   <main class="turinys">
+    <h2>
+     Užsakymo anketa
+    </h2>
+    <p>
+     Užpildykite formą, jei norite gauti pavyzdinį pasiūlymą.
+    </p>
+    <form action="#" method="get">
+     <fieldset>
+      <legend>
+       Kontaktai
+      </legend>
+      <div class="stulpeliai-2">
+       <div class="laukas">
+        <label for="vardas">
+         Vardas *
+        </label>
+        <input id="vardas" name="vardas" required="" type="text"/>
+       </div>
+       <div class="laukas">
+        <label for="pastas">
+         El. paštas *
+        </label>
+        <input id="pastas" name="pastas" required="" type="email"/>
+       </div>
+       <div class="laukas">
+        <label for="telefonas">
+         Telefonas
+        </label>
+        <input id="telefonas" name="telefonas" type="tel"/>
+       </div>
+      </div>
+     </fieldset>
+     <fieldset>
+      <legend>
+       Kompiuteris
+      </legend>
+      <p>
+       Kam daugiausia naudosite kompiuterį?
+      </p>
+      <div class="pasirinkimai">
+       <label>
+        <input checked="" name="paskirtis" type="radio" value="mokslai"/>
+        Mokslams
+       </label>
+       <label>
+        <input name="paskirtis" type="radio" value="zaidimai"/>
+        Žaidimams
+       </label>
+       <label>
+        <input name="paskirtis" type="radio" value="darbas"/>
+        Darbui
+       </label>
+      </div>
+      <div class="stulpeliai-2">
+       <div class="laukas">
+        <label for="paketas">
+         Paslauga
+        </label>
+        <select id="paketas" name="paketas">
+         <option value="bazinis">
+          Bazinis
+         </option>
+         <option value="pro">
+          Pro
+         </option>
+         <option value="ultra">
+          Ultra
+         </option>
+        </select>
+       </div>
+       <div class="laukas">
+        <label for="kiekis">
+         Kiekis
+        </label>
+        <input id="kiekis" max="10" min="1" name="kiekis" type="number" value="1"/>
+       </div>
+      </div>
+     </fieldset>
+     <fieldset>
+      <legend>
+       Papildomai
+      </legend>
+      <div class="laukas">
+       <label for="pastabos">
+        Pastabos
+       </label>
+       <textarea id="pastabos" name="pastabos" rows="4"></textarea>
+      </div>
+      <label>
+       <input name="sutinku" type="checkbox" value="taip"/>
+       Sutinku, kad su manimi susisiektumėte
+      </label>
+     </fieldset>
+     <input type="submit" value="Siųsti formą"/>
+     <input type="reset" value="Išvalyti"/>
+    </form>
+    <p>
+     <small>
+      Pastaba: tai mokomasis pavyzdys, forma duomenų į serverį nesiunčia.
+     </small>
+    </p>
+   </main>
+   <aside>
+    <h3>
+     Informacija
+    </h3>
+    <p>
+     Ši svetainė sukurta kaip HTML ir CSS studijų darbas.
+    </p>
+    <h3>
+     Greitos nuorodos
+    </h3>
+    <ul>
+     <li>
+      <a href="galerija.html">
+       Kompiuterio dalys
+      </a>
+     </li>
+     <li>
+      <a href="uzsakymas.html">
+       Užsakymo anketa
+      </a>
+     </li>
+     <li>
+      <a href="kontaktai.html">
+       Kontaktai
+      </a>
+     </li>
+    </ul>
+    <h3>
+     Darbo laikas
+    </h3>
+    <p>
+     I–V: 9:00–18:00
+     <br/>
+     VI: 10:00–14:00
+     <br/>
+     VII: nedirbame
+    </p>
+   </aside>
+  </div>
+  <footer id="apacia">
+   <p>
+    BitKalvė | Mokomasis projektas
+   </p>
+   <p>
+    <a href="index.html">
+     Į pradžią
+    </a>
+    |
+    <a href="kontaktai.html">
+     Kontaktai
+    </a>
+   </p>
+  </footer>
+ </body>
+</html>

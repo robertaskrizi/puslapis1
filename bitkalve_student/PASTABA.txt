@@ -1,0 +1,16 @@
+BITKALVE – PAPRASTAS HTML/CSS STUDENTIŠKAS VARIANTAS
+
+Kaip atidaryti:
+1. Išarchyvuokite ZIP failą.
+2. Atidarykite index.html naršyklėje.
+3. Visi HTML puslapiai naudoja css/stilius.css, o paveikslėliai yra img aplanke.
+
+Svetainėje yra 5 puslapiai, bendras meniu, header, content, aside ir footer, lentelės,
+sąrašai, 6 paveikslėliai ir anketa su skirtingais input laukais. Nenaudojami karkasai,
+CSS bibliotekos ar JavaScript.
+
+CSS reikalavimų pavyzdžiai:
+- inherit: #apacia a { color: inherit; } – poraštės nuorodos paveldi poraštės teksto spalvą.
+- !important: .rekomenduojama { border: ... !important; } – rekomenduojamo paketo rėmelis oranžinis, nors ID taisyklė aprašo kitą rėmelį.
+
+Pastaba: kontaktai ir kainos yra pavyzdiniai. Anketa yra demonstracinė ir duomenų į serverį nesiunčia.

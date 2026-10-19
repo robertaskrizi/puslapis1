@@ -1,0 +1,135 @@
+/* Bendra stiliu lentele visiems puslapiams */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #292929;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Puslapio virsus */
+#virsus {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#logotipas {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+}
+
+#virsus h1 { margin: 0; font-size: 28px; }
+#virsus p { margin: 3px 0 0; }
+
+/* Meniu */
+#meniu { background-color: #d96b27; }
+#meniu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+#meniu li { display: inline-block; }
+#meniu a {
+    display: block;
+    padding: 10px 14px;
+    color: white;
+    text-decoration: none;
+}
+#meniu a:hover, #meniu a.aktyvus { background-color: #333333; }
+
+/* Pagrindinis turinys ir soninis blokas */
+.puslapis {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.turinys {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 18px;
+    border: 1px solid #cccccc;
+}
+aside {
+    float: right;
+    width: 25%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 18px;
+    border: 1px solid #cccccc;
+}
+h2 { color: #a84d19; margin-top: 0; }
+h3 { margin-bottom: 6px; }
+a { color: #a84d19; }
+
+/* Porašte nuorodos paveldi teksto spalva is footer elemento. */
+#apacia {
+    background-color: #333333;
+    color: #eeeeee;
+    padding: 16px;
+    text-align: center;
+    clear: both;
+}
+#apacia a { color: inherit; }
+
+/* !important pavyzdys: si taisykle nugali ID taisykle. */
+#paketas-pro { border: 2px solid #777777; }
+.rekomenduojama { border: 2px solid #d96b27 !important; }
+
+/* Paprasti 2 ir 3 stulpeliu blokai */
+.stulpeliai-2, .stulpeliai-3, .galerija {
+    overflow: hidden;
+    margin: 15px 0;
+}
+.stulpeliai-2 > section, .stulpeliai-2 > .laukas {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.stulpeliai-3 > section, .galerija figure {
+    float: left;
+    width: 31%;
+    margin: 0 2% 12px 0;
+    box-sizing: border-box;
+}
+.kortele { border: 1px solid #bbbbbb; padding: 12px; background: #fafafa; }
+.kaina { font-size: 24px; font-weight: bold; color: #a84d19; }
+
+/* Galerijos paveiksleliai */
+.galerija figure { border: 1px solid #cccccc; padding: 8px; text-align: center; }
+.galerija img { width: 100%; max-width: 180px; height: 110px; }
+figcaption { font-size: 14px; }
+figcaption strong { display: block; }
+
+/* Lenteles */
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+th, td { border: 1px solid #aaaaaa; padding: 8px; text-align: left; }
+th { background: #e7e7e7; }
+
+/* Formos elementai */
+form fieldset { margin: 15px 0; border: 1px solid #aaaaaa; padding: 12px; }
+form legend { font-weight: bold; }
+.laukas { margin-bottom: 12px; }
+.laukas label { display: block; margin-bottom: 4px; }
+input, select, textarea { max-width: 100%; padding: 7px; border: 1px solid #999999; }
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+    width: 95%;
+}
+.pasirinkimai label { display: inline-block; margin: 4px 12px 4px 0; }
+input[type="submit"], input[type="reset"] { width: auto; padding: 8px 14px; cursor: pointer; }
+.zemelapis { background: #eeeeee; padding: 12px; border: 1px solid #cccccc; }
+
+/* Mazesniame lange turinys rodomas vienas po kitu. */
+@media (max-width: 700px) {
+    .turinys, aside { float: none; width: 100%; margin-bottom: 15px; }
+    .stulpeliai-2 > section, .stulpeliai-2 > .laukas,
+    .stulpeliai-3 > section, .galerija figure { width: 100%; float: none; }
+    #meniu li { display: block; }
+}
